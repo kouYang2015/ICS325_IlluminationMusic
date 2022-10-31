@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Illumination Music - Edit Profile</title>
+        <style>
+             body {
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 20px;
+            }
+            
+            .navbar {
+              overflow: hidden;
+              background-color: white;
+            }
+            
+            .navbar a {
+              float: left;
+              font-size: 20px;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            .dropdown {
+              float: right;
+              overflow: hidden;
+            }
+            
+            .dropdown .dropbtn {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color: black;
+              padding: 13px 40px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+            
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color: white;
+              font-weight: bold;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .dropdown-content a:hover {
+              background-color: #ddd;
+            }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            .backbtn{
+            text-align: left;
+            font-size: 20px;
+            padding: 10px 1%;
+        }
+
+        .image{
+            text-align: center;
+            padding: 0px 0%;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .btncontainer{
+            text-align: center;
+            
+       }
+
+       #save{
+            background-color: rgb(45, 199, 45);
+            border-radius: 20px;
+            font-size: 18px;
+            width: 10%;
+            height: 40px;
+        }
+
+        #save:hover{
+            font-weight:bold;
+        }
+
+        #edit{
+            background-color: rgb(231, 233, 231);
+            border-radius: 20px;
+            font-size: 18px;
+            width: 8%;
+            height: 40px;
+        }
+
+        #edit:hover{
+            font-weight:bold;
+        }
+
+        #create{
+            background-color: orange;
+            border-radius: 20px;
+            font-size: 18px;
+            width: 12%;
+            height: 40px; 
+        }
+
+        #create:hover{
+            font-weight:bold;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            height:50px;
+            text-align: center;
+            border: none;
+        }
+
+        table{
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .list{
+            text-align: left;
+            justify-content: center;
+            font-size: 25px;
+            font-family: Helvetica;
+        }
+
+        .top{
+            text-align: center;
+        }
+       
+        tr {
+            border-bottom: 1px solid black;
+        }
+    
+        .delete{
+            background-color: red;
+            font-size: 20px;
+            border-radius: 20px;
+            font-size: 18px;
+            width: 8%;
+            height: 40px;
+        }
+
+        #delete:hover{
+            font-weight:bold;
+        }
+
+        .deletebtn{
+            text-align: center;
+        }
+
+
+            </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#home"><img src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg" style="width:50px;height:50px;"></a>
+              <a href="#home">Home</a>
+              <a href="#Playlist">Playlist</a>
+              <div class="dropdown">
+                <img class="dropbtn" src="https://pic.onlinewebfonts.com/svg/img_24787.png" style="width:40px;height:40px;">
+                <div class="dropdown-content">
+                  <a href="#">Account</a>
+                  <a href="#">Security</a>
+                  <a href="#">Log out</a>
+                </div>
+              </div> 
+            </div>
+
+            <div class="backbtn">
+                <a href="#home">< Back</a>
+            </div>
+        
+            <div class="image">
+                <img src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2022/03/spotify-playlist-cover-orange-headphones-032322.jpg" style="width:250px;height:250px;">
+            </div>
+        
+            <div class="text">
+                <h1>Park Hangs</h1>
+            </div>
+        
+            <div class="btncontainer">
+                    <div class="buttons" id="buttons">
+                        <input type="submit" id = "save" value="Save Playlist">
+                       
+                        <a href="EditPlaylist.html">
+                        <input type="submit" id="edit" value="Edit" >
+                        </a>
+        
+                        <input type="submit" id="create" value="Create New Playlist">
+                    </div>
+                    <br><br><br>
+            </div>
+        
+            <table class="list" style="width: 80%">
+                <tr class="top">
+                  <th class="title">Title</th>
+                  <th class="album">Album</th>
+                  <th class="artist">Artist</th>
+                  <th class="length">Length</th>
+                </tr>
+                <tr>
+                  <td class="song1">song1</td>
+                  <td>ABC</td>
+                  <td>Artist Name</td>
+                  <td>3 min 15 sec</td>
+                </tr>
+                <tr>
+                    <td class="song2">song2</td>
+                    <td>BCD</td>
+                    <td>Artist Name</td>
+                    <td>2 min 30 sec</td>
+                </tr>
+                <tr>
+                    <td class="song3">song3</td>
+                    <td>CDE</td>
+                    <td>Artist Name</td>
+                    <td>3 min 05 sec</td>
+                </tr>
+                <tr>
+                    <td class="song4">song4</td>
+                    <td>DEF</td>
+                    <td>Artist Name</td>
+                    <td>2 min 50 sec</td>
+                </tr>
+                <tr>
+                    <td class="song5">song5</td>
+                    <td>EFG</td>
+                    <td>Artist Name</td>
+                    <td>3 min 00 sec</td>
+                </tr>
+              </table>
+        
+              <br><br><br>
+              <div class="deletebtn">
+                <input type="submit" class="delete" id="delete" value="Delete Playlist">
+              </div>
+            <br><br><br>
+        
+    </body>
+</html>
