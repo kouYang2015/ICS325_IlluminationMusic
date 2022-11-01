@@ -3,6 +3,10 @@ body {
   font-size: 20px;
 }
 
+.smallfont {
+  font-size: 12px;
+}
+
 .navbar {
   overflow: hidden;
   background-color: white;
@@ -137,10 +141,15 @@ table {
   font-size: 20px;
   border-radius: 20px;
   font-size: 18px;
-  width: 8%;
+  width: auto;
   height: 40px;
+  margin: 3px;
 }
 
 #savework:hover {
   font-weight: bold;
+}
+
+table.rightAlignTD:first-child td {
+  text-align: right;
 }
