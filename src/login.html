@@ -1,118 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Illumination Music - Login</title>
-    <style>
-      body {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 20px;
-      }
-      .navbar {
-        overflow: hidden;
-        background-color: white;
-      }
+    <head>
+        <title>Illumination Music - Login</title>
+        <style>
 
-      .text {
-        text-align: center;
-        font-size: 40px;
-      }
+            body {
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 20px;
+            }
+             .navbar {
+              overflow: hidden;
+              background-color: white;
+            }
+            
+            .text {
+                text-align: center;
+                font-size: 40px;
+            }
 
-      input {
-        height: 40px;
-        margin-left: 10px;
-        font-size: 17px;
-      }
+            input{
+                height: 40px;
+                margin-left: 10px;
+                font-size: 17px;
+            }
+            
+            .left_column{
+                text-align: right;
+                font-size: 25px;
+            }
 
-      .left_column {
-        text-align: right;
-        font-size: 25px;
-      }
+            table{
+                margin-left:auto;
+                margin-right:auto;
+            }
 
-      table {
-        margin-left: auto;
-        margin-right: auto;
-      }
+            .forgot_password{
+                text-align: center;
+            }
 
-      .forgot_password {
-        text-align: center;
-      }
+            .forgot_password:hover{
+                font-weight: bold;
+            }
 
-      .forgot_password:hover {
-        font-weight: bold;
-      }
+            #loginbtn{
+                background-color: rgb(45, 199, 45);
+                border-radius: 20px;
+                font-size: 18px;
+                width: 8%;
+                height: 40px;
+            }
 
-      #loginbtn {
-        background-color: rgb(45, 199, 45);
-        border-radius: 20px;
-        font-size: 18px;
-        width: 8%;
-        height: 40px;
-      }
+            #edit:hover{
+                font-weight:bold;
+            }
 
-      #edit:hover {
-        font-weight: bold;
-      }
+            .submitbtn{
+                text-align: center;
+            }
 
-      .submitbtn {
-        text-align: center;
-      }
+           #loginbtn:hover{
+            font-weight: bold;
+           }
 
-      #loginbtn:hover {
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="homePage.html"
-        ><img
-          src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg"
-          style="width: 70px; height: 70px"
-      /></a>
-    </div>
+           
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#home"><img src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg" style="width:70px;height:70px;"></a> 
+        </div>
 
-    <div class="text">
-      <h1>Illumination Music</h1>
-    </div>
+        <div class="text">
+            <h1>Illumination Music</h1>
+        </div>
 
-    <div class="email_table">
-      <table class="list">
-        <tr class="email">
-          <th class="left_column">Email:<br /><br /></th>
-          <th>
-            <input
-              type="text"
-              id="login_address"
-              name="login_address"
-              size="50"
-              placeholder="Enter your email address"
-            /><br /><br />
-          </th>
-        </tr>
-        <tr class="password">
-          <th class="left_column">Password:<br /><br /></th>
-          <th>
-            <input
-              type="text"
-              id="confirm_address"
-              name="login_password"
-              size="50"
-              placeholder="Enter your password"
-            /><br /><br />
-          </th>
-        </tr>
-      </table>
-    </div>
+        <div class="email_table">
+            <table class="list">
+                <tr class="email">
+                    <th class="left_column">Email:<br><br></th>
+                    <th> <input type="text" id="login_address" name="login_address" size="50" placeholder="Enter your email address"><br><br></th>
+                </tr>
+                <tr class="password">
+                    <th class="left_column">Password:<br><br></th>
+                    <th><input type="text" id="confirm_address" name="login_password" size="50" placeholder="Enter your password"><br><br></th>
+                </tr>
+            </table>
+        </div>
 
-    <div class="forgot_password">
-      <a href="ForgotPassword.html">Forgot Password?</a>
-    </div>
-    <br /><br />
+        <div class="forgot_password">
+            <a href="#forgotpassword">Forgot Password?</a>
+        </div>
+        <br><br>
 
-    <div class="submitbtn">
-      <a href="process_login.php">
-        <input type="submit" id="loginbtn" value="Log in" />
-      </a>
-    </div>
-  </body>
+        <div class="submitbtn">
+            <a href="#home">
+                <input type="submit" id="loginbtn" value="Log in" >
+            </a>
+        </div>
+    </body>
 </html>
