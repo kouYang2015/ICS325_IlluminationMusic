@@ -1,0 +1,146 @@
+body {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 13px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.left_column {
+  text-align: right;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 30px;
+  background: #ddd;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #2196f3;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+#cancel {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#submit:hover {
+  font-weight: bold;
+}
+
+#cancel:hover {
+  font-weight: bold;
+}
+
+.savework {
+  background-color: #81c784;
+  font-size: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 8%;
+  height: 40px;
+}
+
+#savework:hover {
+  font-weight: bold;
+}
