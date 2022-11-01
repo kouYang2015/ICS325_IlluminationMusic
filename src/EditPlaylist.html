@@ -2,11 +2,8 @@
 <html>
   <head>
     <title>Illumination Music - Edit Playlist</title>
+    <link rel="stylesheet" type="text/css" href="css/editPlaylist.css" />
     <style>
-      table,
-      td {
-        border: 1px solid black;
-      }
       body {
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
@@ -74,64 +71,18 @@
         display: block;
       }
 
-      .backbtn {
-        text-align: left;
-        font-size: 20px;
-        padding: 10px 1%;
-      }
-
-      .image {
+      .playlistImage-container {
         text-align: center;
         padding: 0px 0%;
       }
 
-      .text {
+      .playlistTitle-container {
         text-align: center;
         font-size: 20px;
       }
 
-      .btncontainer {
+      .submit_btn_container {
         text-align: center;
-      }
-
-      .btncontainer {
-        text-align: center;
-      }
-
-      #save {
-        background-color: rgb(45, 199, 45);
-        border-radius: 20px;
-        font-size: 18px;
-        width: 10%;
-        height: 40px;
-      }
-
-      #save:hover {
-        font-weight: bold;
-      }
-
-      #edit {
-        background-color: rgb(231, 233, 231);
-        border-radius: 20px;
-        font-size: 18px;
-        width: 8%;
-        height: 40px;
-      }
-
-      #edit:hover {
-        font-weight: bold;
-      }
-
-      #create {
-        background-color: orange;
-        border-radius: 20px;
-        font-size: 18px;
-        width: 12%;
-        height: 40px;
-      }
-
-      #create:hover {
-        font-weight: bold;
       }
 
       table,
@@ -164,72 +115,42 @@
         border-bottom: 1px solid black;
       }
 
-      .delete {
-        background-color: red;
-        font-size: 20px;
-        border-radius: 20px;
-        font-size: 18px;
-        width: 10%;
-        height: 40px;
+      .buttonContainer:hover {
+        background-color: #ebebeb;
       }
 
-      #delete:hover {
+      .buttonContainer:hover {
         font-weight: bold;
       }
-
-      .deletebtn {
-        text-align: center;
+      .saveButton:hover {
+        background-color: #cbe8ba;
       }
 
-      #add {
-        background-color: whitesmoke;
-        font-size: 20px;
-        border-radius: 10px;
-        font-size: 18px;
-        width: 8%;
-        height: 40px;
+      .deleteButton:hover {
+        background-color: #ff8a84;
       }
-
-      #add:hover {
-        font-weight: bold;
+      .cancelButton:hover {
+        background-color: #aaaaaa;
       }
-
-      .addSong {
-        text-align: center;
+      .addButton:hover {
+        background-color: #aaaaaa;
       }
 
       .deleterowbtn {
         background-color: rgb(255, 5, 5);
-      }
-
-      .savework {
-        background-color: rgba(250, 246, 246, 0.897);
-        font-size: 20px;
-        border-radius: 20px;
-        font-size: 18px;
-        width: 8%;
-        height: 40px;
-      }
-
-      #savework:hover {
-        font-weight: bold;
-      }
-
-      .submit_btn_container {
-        text-align: center;
       }
     </style>
   </head>
 
   <body>
     <div class="navbar">
-      <a href="#home"
+      <a href="homePage.html"
         ><img
           src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg"
           style="width: 50px; height: 50px"
       /></a>
-      <a href="#home">Home</a>
-      <a href="#Playlist">Playlist</a>
+      <a href="homePage.html">Home</a>
+      <a href="userpage.php">Playlist</a>
       <div class="dropdown">
         <img
           class="dropbtn"
@@ -237,35 +158,44 @@
           style="width: 40px; height: 40px"
         />
         <div class="dropdown-content">
-          <a href="#">Account</a>
-          <a href="#">Security</a>
-          <a href="#">Log out</a>
+          <a href="user_setting.php">Account</a>
+          <a href="EditProfile_Email.html">Security</a>
+          <a href="#Logout">Log out</a>
         </div>
       </div>
     </div>
 
-    <div class="backbtn">
-      <a href="Playlist.html">&#60;Back</a>
-    </div>
-
-    <div class="image">
+    <div class="playlistImage-container">
       <img
         src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2022/03/spotify-playlist-cover-orange-headphones-032322.jpg"
         style="width: 250px; height: 250px"
       />
     </div>
 
-    <div class="text">
+    <div class="playlistTitle-container">
       <h1 contenteditable="true">Park Hangs</h1>
     </div>
 
-    <div class="btncontainer">
-      <div class="buttons" id="buttons">
-        <input type="submit" id="save" value="Save Playlist" />
-      </div>
-      <br /><br /><br />
+    <div class="submit_btn_container">
+      <input
+        type="submit"
+        class="buttonContainer saveButton"
+        id="save"
+        value="Save Playlist"
+      />
+      <input
+        type="submit"
+        class="buttonContainer deleteButton"
+        id="delete"
+        value="Delete Playlist"
+      />
+      <input
+        type="button"
+        class="buttonContainer cancelButton"
+        value="Cancel"
+        onclick="history.back()"
+      />
     </div>
-
     <table class="list" style="width: 80%" id="myTable">
       <tr class="top">
         <th></th>
@@ -347,18 +277,16 @@
     </table>
     <br />
 
-    <div class="addSong">
+    <div class="submit_btn_container">
       <a href="#addSongtToPlaylist">
-        <input type="submit" id="add" value="Add a Song" />
+        <input
+          class="addButton buttonContainer"
+          type="submit"
+          id="add"
+          value="Add a Song"
+        />
       </a>
     </div>
-    <br /><br />
-
-    <div class="submit_btn_container">
-      <input type="submit" class="delete" id="delete" value="Delete Playlist" />
-      <input type="submit" class="savework" id="savework" value="Done" />
-    </div>
-    <br /><br />
 
     <script>
       function deleteRow(r) {
