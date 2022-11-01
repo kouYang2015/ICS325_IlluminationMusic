@@ -1,19 +1,27 @@
-.loginButton {
-  float: right;
-  background-color: #81c784;
+.buttonContainer {
   font-size: 20px;
   border-radius: 20px;
   font-size: 18px;
-  width: 8%;
+  width: 10%;
   height: 40px;
+}
+.loginButton {
+  float: right;
+  background-color: #81c784;
 }
 
 .signupButton {
   float: right;
-  background-color: #2eaacc;
-  font-size: 20px;
-  border-radius: 20px;
-  font-size: 18px;
-  width: 8%;
-  height: 40px;
+  background-color: #b2ebf2;
+}
+
+.genPlaylist-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.generateButton {
+  background-color: #eea236;
+  width: fit-content;
 }
