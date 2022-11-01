@@ -1,0 +1,19 @@
+.loginButton {
+  float: right;
+  background-color: #81c784;
+  font-size: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 8%;
+  height: 40px;
+}
+
+.signupButton {
+  float: right;
+  background-color: #2eaacc;
+  font-size: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 8%;
+  height: 40px;
+}
