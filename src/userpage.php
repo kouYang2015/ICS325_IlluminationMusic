@@ -40,7 +40,6 @@
             
             .navbar a:hover, .dropdown:hover .dropbtn {
               background-color: white;
-              :;
             }
             
             .dropdown-content {
@@ -100,15 +99,15 @@
     </head>
     <body>
         <div class="navbar">
-            <a href="#home"><img src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg" style="width:50px;height:50px;"></a>
-              <a href="#home">Home</a>
-              <a href="#Playlist">Playlist</a>
+            <a href="homePage.html"><img src="https://brandeps.com/icon-download/M/Music-icon-vector-03.svg" style="width:50px;height:50px;"></a>
+              <a href="homePage.html">Home</a>
+              <a href="userpage.php">Playlist</a>
             
             <div class="dropdown">
               <img class="dropbtn" src="https://pic.onlinewebfonts.com/svg/img_24787.png" style="width:40px;height:40px;">
               <div class="dropdown-content">
-                <a href="#">Account</a>
-                <a href="#">Security</a>
+                <a href="user_setting.php">Account</a>
+                <a href="EditProfile_email.html">Security</a>
                 <a href="#">Log out</a>
               </div>
             </div> 
